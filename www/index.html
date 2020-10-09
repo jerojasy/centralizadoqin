@@ -5,17 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Centralizado Qin</title>
 </head>
 <body>
   <header>
-    <ul>
-      <li><img src="img/qinblanco.png" style="width: 150px;"></li>
+    <!-- <ul>
+      <li></li>
       <li><a class="active" href="#home">Solicitud de Acceso</a></li>
       <li><a href="#news">Proyectos QIN</a></li>
       <li><a href="#contact">Soporte QIN</a></li>
       <li style="float: right"><a href="#about">Hola, Usuario</a></li>
-    </ul>
+    </ul> -->
+
+    <div class="topnav" id="myTopnav">
+      <img src="img/qinblanco.png" class="logo">
+      <a class="aproyecto" href="#proyectos">Proyectos QIN</a>
+      <a href="#soporte">Soporte QIN</a>
+      <a href="#" class="userlink"><span class="spansaludo">Bienvenido,</span> Usuario</a>
+      <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </header>
 
 <div class="container-fluid">
@@ -99,6 +110,17 @@
         </div>
         
       </div>
-    </div>       
+    </div>    
+    
+    <script>
+      function responsiveMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
 </body>
 </html>

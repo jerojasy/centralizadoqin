@@ -33,7 +33,7 @@ body
 
 .login-header {
   background: #073571;
-  padding: 20px;
+  /* padding: 20px; */
   font-size: 1.4em;
   font-weight: normal;
   text-align: center;
@@ -147,6 +147,18 @@ body
   }
   .wrap {
     display: block !important;
+  }
+  .login-header {
+    width: 225%;
+  }
+  .login-container {
+    width: 225%;
+  }
+  .login input {
+    padding: 5px;
+  }
+  .login {
+    margin: 15%;
   }
 }
 

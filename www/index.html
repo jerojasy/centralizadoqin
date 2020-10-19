@@ -4,24 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Centralizado Qin</title>
 </head>
 <body>
   <header>
-    <!-- <ul>
-      <li></li>
-      <li><a class="active" href="#home">Solicitud de Acceso</a></li>
-      <li><a href="#news">Proyectos QIN</a></li>
-      <li><a href="#contact">Soporte QIN</a></li>
-      <li style="float: right"><a href="#about">Hola, Usuario</a></li>
-    </ul> -->
 
     <div class="topnav" id="myTopnav">
       <img src="img/qinblanco.png" class="logo">
-      <a class="aproyecto" href="#proyectos">Proyectos QIN</a>
-      <a href="#soporte">Soporte QIN</a>
+      <a class="aproyecto tablinks" href="#" onclick="optionMenu(event, 'admsva')">Administración SVA</a>
+      <a href="#" class="tablinks" onclick="optionMenu(event, 'otrosadm')">Otros Administradores</a>
+      <a href="#" class="tablinks" onclick="optionMenu(event, 'webservices')">Web Services</a>
+      <a href="#" class="tablinks" onclick="optionMenu(event, 'lpservicios')">Launchpad de Servicios</a>
+      <a href="#" class="tablinks" onclick="optionMenu(event, 'soporte')">Soporte QIN</a>
+      <a href="#" class="tablinks" onclick="optionMenu(event, 'gestion')">Gestión QIN</a>
+      <a href="#" class="tablinks" onclick="optionMenu(event, 'contacto')">Contáctanos</a>
       <a href="#" class="userlink"><span class="spansaludo">Bienvenido,</span> Usuario</a>
       <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
         <i class="fa fa-bars"></i>
@@ -29,7 +28,222 @@
     </div>
   </header>
 
-<div class="container-fluid">
+<div class="tabcontent" id="admsva">
+  <div class="container bg">
+    <div class="wrap row">
+
+      <div class="tile col">
+        <img src='img/image4.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.250:8043/">Administración VoLTE</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+      <div class="tile col"> 
+        <img src='img/Captura4.PNG'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.250:13016">Administrador Carrier Billing</h1></a></div>
+        <div class="text">
+          <h2 class="animate-text">Plataforma de Administración de subscripciones y contrataciones.</h2>
+          <p class="animate-text">Descargar Documentación </p>
+        </div>
+      </div>
+
+      <div class="tile col"> 
+        <img src='img/Captura5.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://172.24.168.230:8000/">Consultor Multiplataformas</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p>
+        </div>
+      </div>
+
+      <div class="tile col"> 
+        <img src='img/Captura6.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="#">Portal Manager</h1></a></div>
+        <div class="text">
+          <h2 class="animate-text">Portal de Administración de Suscripciones</h2>
+          <p class="animate-text">Descargar Documentación</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="wrap row">
+
+      <div class="tile col">
+        <img src='img/image6.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.160:8011/">Administrador Notification Manager</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+      <div class="tile col">
+        <img src='img/image7.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.10.0.187/envioMasivoSms/login.php">Administrador SMS Campaña</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+      <div class="tile col">
+        <img src='img/image8.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.45.0.232:8080/login/">Administrador Portal de Descarga</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+      <div class="tile col">
+        <img src='img/image9.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.180:5003/">Administrador Pack Digital</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+    </div>
+
+    <div class="wrap row">
+
+      <div class="tile col">
+        <img src='img/image10.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.10.0.203/bolsasturboTrio/index.php">Administrador Bolsas Turbo</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+      <div class="tile col">
+        <img src='img/image11.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.177.102.224:5080/recomendador_p_roaming/">Administrador Recomentador de Planes</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+      <div class="tile col">
+        <img src='img/image12.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.183.13.29:10080/minutrade/">Administrador Minutrade</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+      <div class="tile col">
+        <img src='img/image13.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.250:13024/">Administrador Cuenta Corriente Roaming</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+    </div>
+
+    <div class="wrap row">
+
+      <div class="tile col"> 
+        <img src='img/image2.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.181:8009/login/">Administrador Preplan Believe</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p>
+        </div>
+      </div>
+
+      <div class=" col"> 
+      </div>
+
+      <div class=" col"> 
+      </div>
+
+      <div class=" col"> 
+      </div>
+  
+    </div>
+  </div>
+</div>
+
+<div class="tabcontent" id="otrosadm">
+  <div class="container">
+    <div class="wrap row">
+
+      <div class="tile col"> 
+        <img src='img/image1.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="https://cabgestion.cl/#">Sistema Gestión de Taxis</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación </p>
+        </div>
+      </div>
+
+      <div class="tile col">
+        <img src='img/image3.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="https://cabgestion.cl/gst">Gestión Horas Extras</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+      <div class="tile col">
+        <img src='img/image5.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="https://cabgestion.cl/empresas">Sistema de Taxis Empresa</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p> 
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="tabcontent" id="webservices">
+
+</div>
+
+<div class="tabcontent" id="lpservicios">
+  <div class="container">
+    <div class="wrap row">
+
+      <div class="tile col"> 
+        <img src='img/Captura2.PNG'/>
+        <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.160:8032/qin/services/PM/consulta?msisdn=56977095634">Launchpad de Servicios y Suscripciones</h1></a></div>
+        <div class="text">
+            <p class="animate-text">Descargar Documentación</p>
+        </div>
+      </div>
+
+      <div class="tile col"> 
+        <img src='img/Captura3.PNG'/>
+        <div class="textittle"><h1 class="cardheader"><a href="#">Consumo No Facturado</h1></a></div>
+        <div class="text">
+          <p class="animate-text">Descargar Documentación</p>
+        </div>
+      </div>
+
+      <div class="tile col"> 
+        <img src='img/Captura7.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="#">Launchpad CarrierBilling</h1></a></div>
+        <div class="text">
+          <h2 class="animate-text">Plataforma de Visualización de Suscripciones y Contratación.</h2>
+          <p class="animate-text">Descargar Documentación</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="tabcontent" id="soporte">
+
+</div>
+
+<div class="tabcontent" id="gestion">
+
+</div>
+
+<div class="tabcontent" id="contacto">
+  <div class="container">
     <div class="wrap row">
 
       <div class="tile col"> 
@@ -39,200 +253,11 @@
           <p class="animate-text">Descargar Documentación</p>
         </div>
       </div>
-      
-      
-      <div class="tile col"> 
-        <img src='img/Captura2.PNG'/>
-        <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.160:8032/qin/services/PM/consulta?msisdn=56977095634">Launchpad de Servicios y Suscripciones</h1></a></div>
-        <div class="text">
-            <p class="animate-text">Descargar Documentación</p>
-        </div>
-      </div>
-        
-        <div class="tile col"> 
-          <img src='img/Captura3.PNG'/>
-          <div class="textittle"><h1 class="cardheader"><a href="#">Consumo No Facturado</h1></a></div>
-          <div class="text">
-            <h1></h1>
-            <p class="animate-text">Descargar Documentación</p>
-          </div>
-      </div>
-
-      <div class="tile col"> 
-        <img src='img/Captura4.PNG'/>
-        <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.250:13016">Administrador Carrier Billing</h1></a></div>
-        <div class="text">
-          <h1></h1>
-          <h2 class="animate-text">Plataforma de Administración de subscripciones y contrataciones.</h2>
-          <p class="animate-text">Descargar Documentación </p>
-        </div>
-      </div>
-
-      <div class="tile col"> 
-        <img src='img/image1.png'/>
-        <div class="textittle"><h1 class="cardheader"><a href="#">Sistema Gestión de Taxis</h1></a></div>
-        <div class="text">
-          <h1></h1>
-          <p class="animate-text">Descargar Documentación </p>
-        </div>
-      </div>
-      </div>
 
     </div>
+  </div>
 
-    <div class="wrap row">
+</div>
 
-        <div class="tile col"> 
-          <img src='img/Captura5.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://172.24.168.230:8000/">Consumidor Multiplataformas</h1></a></div>
-          <div class="text">
-            <h1></h1>
-            <p class="animate-text">Descargar Documentación</p>
-          </div>
-        </div>
-          
-        <div class="tile col"  style="background-color:rgb(100, 100, 100)"> 
-          <img src='img/Captura6.png' style="opacity:0.2;"/>
-          <div class="textittle"><h1 class="cardheader" style="background-color:rgb(100, 100, 100)"><a href="#">Portal Manager</h1></a></div>
-          <div class="text">
-            <h2 class="animate-text">Portal de Administración de Suscripciones</h2>
-            <p class="animate-text">Descargar Documentación</p>
-          </div>
-        </div>
-
-        <div class="tile col"> 
-          <img src='img/Captura7.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="#">Launchpad CarrierBilling</h1></a></div>
-          <div class="text">
-            <h2 class="animate-text">Plataforma de Visualización de Suscripciones y Contratación.</h2>
-            <p class="animate-text">Descargar Documentación</p>
-          </div>
-        </div>
-
-        <div class="tile col"> 
-          <img src='img/image2.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.181:8009/login/">Administrador Preplan Believe</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p>
-          </div>
-        </div>
-
-        <div class="tile col">
-          <img src='img/image3.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="https://cabgestion.cl/gst">Gestión Horas Extras</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-        <!-- <div class="col"> 
-          <img/>
-          <div class="">
-            <h1> </h1>
-            <h2 class=""></h2>
-            <p class=""> </p>
-          </div>
-        </div> -->
-        
-      </div>
-      <div class="wrap row">
-
-        <div class="tile col">
-          <img src='img/image4.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.250:8043/">Administración VoLTE</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-        <div class="tile col">
-          <img src='img/image5.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="https://cabgestion.cl/empresas">Sistema de Taxis Empresa</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-        <div class="tile col">
-          <img src='img/image6.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.160:8011/">Administrador Notification Manager</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-        <div class="tile col">
-          <img src='img/image7.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://10.10.0.187/envioMasivoSms/login.php">Administrador SMS Campaña</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-        <div class="tile col">
-          <img src='img/image8.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://10.45.0.232:8080/login/">Administrador Portal de Descarga</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-      </div>
-
-      <div class="wrap row">
-
-        <div class="tile col">
-          <img src='img/image9.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.180:5003/">Administrador Pack Digital</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-        <div class="tile col">
-          <img src='img/image10.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://10.10.0.203/bolsasturboTrio/index.php">Administrador Bolsas Turbo</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-        <div class="tile col">
-          <img src='img/image11.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://10.177.102.224:5080/recomendador_p_roaming/">Administrador Recomentador de Planes</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-        <div class="tile col">
-          <img src='img/image12.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://10.183.13.29:10080/minutrade/">Administrador Minutrade</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-        <div class="tile col">
-          <img src='img/image13.png'/>
-          <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.250:13024/">Administrador Cuenta Corriente Roaming</h1></a></div>
-          <div class="text">
-            <p class="animate-text">Descargar Documentación</p> 
-          </div>
-        </div>
-
-      </div>
-    </div>    
-    
-    <script>
-      function responsiveMenu() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
 </body>
 </html>

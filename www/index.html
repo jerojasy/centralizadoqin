@@ -7,7 +7,14 @@
   <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Centralizado Qin</title>
+
+  <!-- Chat -->
+  <!--JQuery-->  
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="floating-wpp.min.js"></script>
+  <link rel="stylesheet" href="floating-wpp.min.css">
+
+
 </head>
 <body>
   <header>
@@ -19,9 +26,10 @@
       <a href="#" class="tablinks" onclick="optionMenu(event, 'webservices')">Web Services</a>
       <a href="#" class="tablinks" onclick="optionMenu(event, 'lpservicios')">Launchpad de Servicios</a>
       <a href="#" class="tablinks" onclick="optionMenu(event, 'soporte')">Soporte QIN</a>
+      <a href="#" class="tablinks" onclick="optionMenu(event, 'analitica')">Analítica</a>
       <a href="#" class="tablinks" onclick="optionMenu(event, 'gestion')">Gestión QIN</a>
       <a href="#" class="tablinks" onclick="optionMenu(event, 'contacto')">Contáctanos</a>
-      <a href="#" class="userlink"><span class="spansaludo">Bienvenido,</span> Usuario</a>
+      <a href="#" class="userlink"><span class="spansaludo">Hola,</span> Usuario</a>
       <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
         <i class="fa fa-bars"></i>
       </a>
@@ -36,7 +44,8 @@
         <img src='img/image4.png'/>
         <div class="textittle"><h1 class="cardheader"><a href="http://10.46.0.250:8043/">Administración VoLTE</h1></a></div>
         <div class="text">
-          <p class="animate-text">Descargar Documentación</p> 
+          <p class="animate-text">Descargar Brochure <i class="fa fa-file"></i></p>
+          <p class="animate-text">Descargar Documentación <i class="fa fa-download"></i></p>
         </div>
       </div>
 
@@ -235,10 +244,84 @@
 </div>
 
 <div class="tabcontent" id="soporte">
+<div class="container">
+  <div class="wrap row">
 
+    <div class="tile col"> 
+      <img src='img/osticket.png'/>
+      <div class="textittle"><h1 class="cardheader"><a href="">Ticket Remedy</h1></a></div>
+      <div class="text">
+        <p class="animate-text"></p>
+      </div>
+    </div>
+
+    <div class="tile col"> 
+      <img src='img/mantis.png'/>
+      <div class="textittle"><h1 class="cardheader"><a href="">Mantis</h1></a></div>
+      <div class="text">
+        <p class="animate-text"></p>
+      </div>
+    </div>
+
+    <div class="tile col"> 
+      <img src='img/monitoreo.png'/>
+      <div class="textittle"><h1 class="cardheader"><a href="">Plataforma Monitoreo</h1></a></div>
+      <div class="text">
+        <p class="animate-text"></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="tabcontent" id="analitica">
+  <div class="container">
+    <div class="wrap row">
+  
+      <div class="tile col"> 
+        <img src='img/confluence.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="">Confluence</h1></a></div>
+        <div class="text">
+          <p class="animate-text"></p>
+        </div>
+      </div>  
+
+    </div>
+  </div>
 </div>
 
 <div class="tabcontent" id="gestion">
+
+  <div class="container">
+    <div class="wrap row">
+  
+      <div class="tile col"> 
+        <img src='img/activecollab.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="">Active Collab</h1></a></div>
+        <div class="text">
+          <p class="animate-text"></p>
+        </div>
+      </div>
+  
+      <div class="tile col"> 
+        <img src='img/trello.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="">Trello</h1></a></div>
+        <div class="text">
+          <p class="animate-text"></p>
+        </div>
+      </div>
+  
+      <div class="tile col"> 
+        <img src='img/onedrive.png'/>
+        <div class="textittle"><h1 class="cardheader"><a href="">OneDrive</h1></a></div>
+        <div class="text">
+          <p class="animate-text"></p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
 
 </div>
 
@@ -250,7 +333,7 @@
         <img src='img/Captura1.PNG'/>
         <div class="textittle"><h1 class="cardheader"><a href="https://www.qin.cl/">Web Qin Technology</h1></a></div>
         <div class="text">
-          <p class="animate-text">Descargar Documentación</p>
+          <p class="animate-text"></p>
         </div>
       </div>
 
@@ -258,6 +341,25 @@
   </div>
 
 </div>
+<!--Div where the WhatsApp will be rendered-->  
+<div id="WAButton"></div>  
 
 </body>
 </html>
+
+
+<script type="text/javascript">  
+  $(function () {
+          $('#WAButton').floatingWhatsApp({
+              phone: '+56977095634', //WhatsApp Business phone number
+              headerTitle: 'Chatea con nosotros!', //Popup Title
+              popupMessage: 'Hola, en qué te podemos ayudar?', //Popup Message
+              showPopup: true, //Enables popup display
+              buttonImage: '<img src="img/qinayuda.png">', //Button Image
+              //headerColor: 'crimson', //Custom header color
+              //backgroundColor: 'crimson', //Custom background button color
+              position: "right", //Position: left | right
+              headerColor: "#073571"
+          });
+      });
+</script> 
